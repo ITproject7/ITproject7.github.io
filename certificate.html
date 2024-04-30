@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate</title>
+   <link rel="icon" href="media/icon.jpg" type="img/x-icon">
+   <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+   
+   <link rel="stylesheet" href="main1.css">
+   <link rel="stylesheet" href="web font/fontawesome-free-6.5.2-web/css/all.min.css">  
+</head>
+<style>
+    .title{
+  text-align: center;
+  padding-bottom: 15px;
+  color: rgb(18 16 93);
+  text-shadow: 0 5px 10px silver;
+  font-size: 26px;
+       }
+  .subtitle{
+    padding-bottom: 15px;
+    color: rgb(18 16 93);
+    text-shadow: 0 5px 10px silver;
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+ }      
+.FullName{
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  box-sizing: content-box;
+  background: grey;
+  height: 0px;
+  margin-left: 25px;
+  display: block;
+  min-width: 0;
+  width: 200px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+.Date{
+font: inherit;
+letter-spacing: inherit;
+color: currentColor;
+box-sizing: content-box;
+background: grey;
+height: 0px;
+margin-left: 25px;
+display: block;
+min-width: 0;
+width: 200px;
+padding: 20px;
+background-color: whitesmoke;
+}
+.courSes{
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  box-sizing: content-box;
+  background: grey;
+  height: 0px;
+  margin-left: 26px;
+  display: block;
+  min-width: 0;
+  width: 200px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+.email{
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  box-sizing: content-box;
+  background: grey;
+  height: 0px;
+  margin-left: 25px;
+  display: block;
+  min-width: 0;
+  width: 200px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+label {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(18 16 93);
+  margin-bottom: 5px; 
+}
+.button-container {
+  display: flex;
+  justify-content: start;
+}
+.cer-btn   {
+  padding: 11px 34px;
+  border-radius: 19px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #1c526b;
+  color: white;
+  margin-right: -141px;
+  margin-left: 18px;
+  margin-top: 44px; 
+  transition: transform 0.3s ease;
+}
+.cer-btn:hover{
+transform: scale(1.1);
+}
+.cer-btn1 {
+  padding: 11px 34px;
+  border-radius: 19px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #1c526b;
+  color: white;
+  margin-right: -141px;
+  margin-left: 201px;
+  margin-top: 44px;
+  
+  transition: transform 0.3s ease;
+}
+.cer-btn1:hover{
+  transform: scale(1.1);
+}
+.box{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  border-radius: 2%;
+  background: white;
+  text-align: left;
+  padding: 8px;
+  flex: 1;
+   margin: 0 auto; 
+  margin-top: 50px; 
+  height: 497px;
+  width: 320px;
+  align-items: center;
+  /* margin-left: -80px; */
+}
+
+.cer-body{
+  padding: 0;
+  background-image: url('/imgs/cer-bg.jpg');
+  background-size:contain;
+  
+  font-family: Arial, sans-serif;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.box {
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+</style>
+<body>
+    <div class="cer-body">
+        <div>
+            <nav class="navbar">
+                <img src="imgs/logo.png" alt="" class="logo">
+                <ul class="lists">
+                    <li><a href="./index.html" class="list">Home</a></li>
+                    <li><a href="./course.html" class="list">All Courses</a></li>
+                    <li><a href="./about.html" class="list">About</a></li>
+                    <li><a href="./profs.html" class="list">Team</a></li>
+                    <li><a href="./pricing.html" class="list">Pricing</a></li>
+                    <li><a href="./cont.html" class="list">Contact Us</a></li>
+                    <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                    <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                    
+                    <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+                </ul>
+                    
+                
+                
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <h1 class="title">Certificate Information</h1>
+                <h2 class="subtitle">please fill in your information.</h2>
+                <form action="">
+                    <div class="input">
+                        <label>Full Name:</label>
+                        <input type="text" class="FullName" name="fullName" required>
+                    </div>
+                    <div class="input">
+                        <Label>Course Name:</Label>
+                        <input list="Courses" name="Courses"class="courSes" required>
+                        <datalist id="Courses">
+                            <option value="Arabic">
+                            <option value="Mathematics">
+                            <option value="English">
+                            <option value="Physics">
+                            <option value="Chemistry">
+                            <option value="Biology">
+                        </datalist>
+                        <div class="input">
+                            <Label>Email:</Label>
+                            <input type="email" class="email" required>
+                        </div>
+            
+                    </div>
+                    <div class="input1">
+                        <label for="completionDate">Completion Date:</label>
+                        <input type="date" class="Date" name="completionDate" value="2005-01-01" required>
+                    </div>
+                    <div class="button-container">
+                        <a href="./register.html"><input type="button" value="Submit" class="cer-btn"></a>
+                        <input type="reset" value="Reset" class="cer-btn1">
+                    </div>
+                </form>
+            </div>
+        </div>        
+        <br><br><br><br><br><br>
+        <div class="footer">
+            <footer>
+                <div class="upperfooter">
+                    <div class="footer-content">
+                        <h3>BYTE-LEARN</h3>
+                        <p>The automated process starts as soon as your clothes go into the machine</p>
+    
+                        <ul>
+                              <li><a href="#explore">Explore</a></li>
+                              <li><a href="#about-us">About Us</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#courses">Courses</a></li>
+                              <li><a href="#blog">Blog</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                              <li><a href="#quick-links">Quick Links</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                              <li><a href="#pricing">Pricing</a></li>
+                              <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                              <li><a href="#privacy">Privacy</a></li>
+                              <li><a href="#feedbacks">Feedbacks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Have a question?</h3>
+                        <p>Call us on <a href="#">+099999999</a></p>
+                        <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                        <div class="icons">
+                          <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+            </footer>
+        </div>
+    </div>    
+
+   
+</body>
+</html>
