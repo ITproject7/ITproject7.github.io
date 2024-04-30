@@ -5,123 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments</title>
     <link rel="stylesheet" href="main1.css">
+    <style>
+        .question1, .question2, .question3, .question4, .question5{
+            background: linear-gradient(rgb(218, 122, 122),rgb(61, 105, 155),rgb(155, 78, 122));
+            height: 200px;
+            width: 500px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(124, 122, 122);
+            border-radius: 30px;
+            margin: 10px;
+        }
+        
+        .q1q1,.q2q2,.q3q3,.q4q4,.q5q5{
+            word-spacing: 10px;
+            font-weight: bold;
+            font-size: large;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        #text-answer{
+            height: 70px;
+            width: 450px;
+            font-size: 15px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .q1c1 ,.q2c2,.q3c3,.q4c4{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .Submit-Btn{
+            background: linear-gradient(rgb(90, 117, 166), rgb(112, 132, 176));
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 200px;
+            border-radius: 20px;
+            font-size: larger;
+            font-weight: 100;
+        }
+        .hanafi{
+            background: linear-gradient(rgb(106, 163, 212),rgb(29, 120, 143));
+        } 
+        
+    </style>
     
 </head>
-<style>
-    /* Assignments css */
-.Assignments-container{
-  height: 110vh;
-  width: 99vw;
-  position: relative;
-}
-.Assignments{
-  background-image: url('/imgs/OIP\ \(2\).jpeg');
-  height: 200px;
-  width: 550px;
-  background-size: cover;
-  position: absolute;
-  border-radius: 60px;
-}
-.a1, .a3, .a5{
-  left: 100px;
-}
-.a2, .a4, .a6{
-  left: 50vw;
-}
-.a7{
-  top: 90vh;
-  left: 30vw;
-}
-.a3, .a4{
-  top: 30vh;
-}
-.a5 , .a6{
-  top: 60vh;
-}
-.hanafi{
-  background: linear-gradient(rgb(106, 163, 212),rgb(29, 120, 143));
-}
-.Assignment-font{
-  text-align: center;
-  font-size: 40px;
-  margin-top: 80px;
-}
-.Assignments:hover{
-  height: 180px;
-  width: 525px;
-  .htnzl-elmarradi{
-    color: rgb(7, 91, 130);
-
-    font-weight: normal;
-  }
-  .Assignment-font{
-    margin-top: 70px;
-  }
-}
-.htnzl-elmarradi{
-  color: black;
-
-}
-</style>
 <body class="hanafi">
-    <div>
-        <nav class="navbar">
-            <img src="imgs/logo.png" alt="" class="logo">
-            <ul class="lists">
-                <li><a href="./index.html" class="list">Home</a></li>
-                <li><a href="./course.html" class="list">All Courses</a></li>
-                <li><a href="./about.html" class="list">About</a></li>
-                <li><a href="./profs.html" class="list">Team</a></li>
-                <li><a href="./pricing.html" class="list">Pricing</a></li>
-                <li><a href="./cont.html" class="list">Contact Us</a></li>
-                <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
-                <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
-                <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
-            </ul>
-                
+
+  <div>
+    <nav class="navbar">
+        <img src="imgs/logo.png" alt="" class="logo">
+        <ul class="lists">
+            <li><a href="./index.html" class="list">Home</a></li>
+            <li><a href="./course.html" class="list">All Courses</a></li>
+            <li><a href="./about.html" class="list">About</a></li>
+            <li><a href="./profs.html" class="list">Team</a></li>
+            <li><a href="./pricing.html" class="list">Pricing</a></li>
+            <li><a href="./cont.html" class="list">Contact Us</a></li>
+            <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+            <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+            <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+        </ul>
             
-            
-        </nav>
+        
+        
+    </nav>
+</div>
+    <div class="assignment-container">
+       <div class="question1">
+        <p class="q1q1">Q1.What is the derivative of <i>f</i>(x) = x <sup>4</sup> + 3x?</p>
+        <label>
+            <input type="radio" class="q1c1" name="q1">3x <sup>3</sup> + 4 <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q1c1" name="q1">4x <sup>3</sup> + 4x <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q1c1" name="q1">4x <sup>3</sup> + 4 <br><br>
+        </label>
+        <br>
+       </div>
+        <div class="question2">
+            <p class="q2q2">Q2.What's the integration of e <sup>x</sup>?</p>
+        <label>
+            <input type="radio" class="q2c2" name="q2c2">xe <sup>x</sup><br><br>
+        </label>
+        <label>
+            <input type="radio" class="q2c2" name="q2c2">xe <sup>x+1</sup><br><br>
+        </label>
+        <label>
+            <input type="radio" class="q2c2" name="q2c2">e <sup>x+1</sup><br><br>
+        </label>
+        </div>
+        <div class="question3">
+            <p class="q3q3">Q3.What's the derivative of this expression w.r.t.x: <br>x * y?</p>
+        <label>
+            <input type="radio" class="q3c3" name="q3c3"> x * <sup>dy</sup>/<sub>dx</sub> + y <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q3c3" name="q3c3"> x * <sup>dy</sup>/<sub>dx</sub> + y + 1 <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q3c3" name="q3c3"> x * <sup>dy</sup>/<sub>dx</sub> + y * <sup>dx</sup>/<sub>dx</sub> <br><br>
+        </label>
+        </div>
+        <div class="question4">
+            <p class="q4q4">Q4.What's the derivative of e <sup>x</sup>?</p>
+        <label>
+            <input type="radio" class="q4c4" name="q4c4">xe <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q4c4" name="q4c4">x + e <br><br>
+        </label>
+        <label>
+            <input type="radio" class="q4c4" name="q4c4">e <sup>x</sup><br><br>
+        </label>
 
+        </div>
+
+        <div class="question5">
+            <p class="q5q5">Q5.What are the double angle rules of cosine? </p>
+        <label>
+            <input type="text" name="Answer" id="text-answer" placeholder="Type Answer">
+        </label>
+        </div>
+        <form action="">
+            <a href="./task.html"></a><button class="Submit-Btn" type="submit">Submit</button>
+        </form>
     </div>
-    <div class="Assignments-container">
 
-        <div class="Assignments a1">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 1</a></p>
-
-        </div>
-        <div class="Assignments a2">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 2</a></p>
-
-        </div>
-        <div class="Assignments a3">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 3</a></p>
-
-        </div>
-        <div class="Assignments a4">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 4</a></p>
-
-        </div>
-        <div class="Assignments a5">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 5</a></p>
-
-        </div>
-        <div class="Assignments a6">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 6</a></p>
-
-        </div>
-        <div class="Assignments a7">
-
-            <p class="Assignment-font"><a href="./task.html" class="htnzl-elmarradi">Assignment 7</a></p>
-
-        </div>
-    </div>
     <br><br><br><br><br><br><br>
          <div class="footer">
             <footer>
@@ -165,7 +180,7 @@
             </footer>
         </div>
   <script>
-    var message = "The student who made this page did their best, please press 'ok' if you'll give them the fullmark"
+    var message = "The student who made this did their best, press 'ok' if you'll give this student a good mark"
     alert(message);
   </script>
 </body>
