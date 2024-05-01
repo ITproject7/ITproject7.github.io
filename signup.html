@@ -28,7 +28,7 @@
     margin-left: 36%;
     margin-bottom: 60px;
     margin-right: 10px;
-	height: 535px;
+	height: 570px;
 	width: 320px;
 	
     background-color: rgba(28, 82, 107, 0.7);
@@ -161,6 +161,12 @@
     height: 20px;
     margin-right: 12px;
 }
+#passcond{
+  margin-top: -10px;
+  color: rgba(252, 252, 252,0.7);
+  font-size: 15px;
+
+}
 </style>
 
 <body>
@@ -191,9 +197,14 @@
                     
 					<input type="email" name="" id="signemail" placeholder="Enter your email" class="signinputs"  required><br>
 					<input type="password" id="signpassword" placeholder="Create your password" class="signinputs" required><br>
+          <p id="passcond">*Password must be at least 8 characters, must include atleast one uppercase letter </p>
 					<input type="password" id="signconfirmPassword" placeholder="Confirm your password" class="signinputs" required ><br>
+   
+          
 					<input type="date" name="" id="" class="signinputs" required><br>
-					<a href="./course.html"><button type="submit" id="signsubbutton">SignUp</button></a>
+					<!-- <a href="./course.html"><button type="submit" id="signsubbutton" onclick="submit()">SignUp</button></a> -->
+          <button type="submit" id="signsubbutton" onclick="validateSignUp()">Sign Up</button>
+          
 				</fieldset>
                 
                 <p class="signreg">Already have an account? <a href="./reg.html" class="signreglink">Login</a></p>
@@ -264,8 +275,12 @@
         </footer>
     </div>
  <script >
-    const signUpButton = document.getElementById('signsubbutton');
-signUpButton.addEventListener('click', validateSignUp);
+  const signUpButton = document.getElementById('signsubbutton');
+signUpButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    validateSignUp();
+});
+
 
 function validateSignUp() {
   const password = document.getElementById('signpassword').value;
@@ -286,9 +301,10 @@ function validateSignUp() {
     alert('Password must include at least one uppercase letter');
     return;
   }
-
-  console.log('Sign up successful!');
+  window.location.href = "./course.html"; 
+   
 }
+
 
 
 
@@ -297,7 +313,7 @@ document.getElementById("signsignupForm").addEventListener("submit", function() 
   var email = document.getElementById("signemail").value;
   var password = document.getElementById("signpassword").value;
   var expirationDate = new Date();
-  expirationDate.setDate(expirationDate.getDate() + 100); // Set the cookie to expire in 7 days
+  expirationDate.setDate(expirationDate.getDate() + 1000);
   document.cookie = "signemail=" + email + "; expires=" + expirationDate.toUTCString() + "; path=/";
   document.cookie = "signpassword=" + password + "; expires=" + expirationDate.toUTCString() + "; path=/";
 });
