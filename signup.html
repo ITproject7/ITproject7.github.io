@@ -275,11 +275,6 @@
         </footer>
     </div>
  <script >
-  const signUpButton = document.getElementById('signsubbutton');
-signUpButton.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    validateSignUp();
-});
 
 
 function validateSignUp() {
@@ -292,18 +287,25 @@ function validateSignUp() {
   }
 
   if (password.length < 8) {
-    alert('Password must be at least 8 characters long');
+    document.getElementById('passcond').style.color = "red";
+    // alert('Password must be at least 8 characters long');
     return;
   }
 
   const hasUppercase = /[A-Z]/.test(password);
   if (!hasUppercase) {
-    alert('Password must include at least one uppercase letter');
+    document.getElementById('passcond').style.color = "red";
+    // alert('Password must include at least one uppercase letter');
     return;
   }
   window.location.href = "./course.html"; 
    
 }
+const signUpButton = document.getElementById('signsubbutton');
+signUpButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    validateSignUp();
+ });
 
 
 
