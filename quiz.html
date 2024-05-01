@@ -78,6 +78,10 @@
 .complete {
     font-size: 26px;
 }
+#myButton2 {
+    display: none;
+}
+
 
     </style>
 </head>
@@ -265,6 +269,8 @@
                  document.querySelector('input[name="quiz8"]:checked') ,
                  document.querySelector('input[name="quiz9"]:checked') ,
                  document.querySelector('input[name="quiz10"]:checked') ,]
+                 document.getElementById("myButton").style.display = "none";
+                 document.getElementById("myButton2").style.display = "block";
                  var counter = 0;
                 for (let i = 0 ; i < 10 ; i++)
                 {
